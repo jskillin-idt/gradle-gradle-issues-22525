@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation platform('io.quarkus:quarkus-bom:2.11.2.Final')
+    implementation 'org.apache.maven:maven-embedder:3.8.6'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencyLocking {
+    lockAllConfigurations()
+}
